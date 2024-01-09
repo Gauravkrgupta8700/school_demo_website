@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Course Schedule</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+
+<body>
+    <header>
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="GK International School Logo">
+                </div>
+                <div class="school-title">
+                    <h1>GK International School</h1>
+                    <p>Empowering the Future</p>
+                </div>
+            </div>
+        </header>
+    </header>
+    <main>
+        <div class="controls">
+            <label for="filter-select">Filter by Day:</label>
+            <select id="filter-select">
+                <option value="all">All</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <!-- Add options for other days -->
+            </select>
+        </div>
+        <div id="course-list">
+            <!-- Courses will be dynamically generated here -->
+        </div>
+    </main>
+    <div id="modal">
+        <div id="modal-content">
+            <h2>Book a Slot</h2>
+            <input type="date" id="schedule-date">
+            <button id="book-button">Book</button>
+            <span id="close-modal" class="close">Close</span>
+        </div>
+    </div>
+    <script src="courses.js"></script>
+</body>
+
+</html>

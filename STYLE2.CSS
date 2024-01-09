@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Global styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.background {
+    background-image: url("your-background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    border: 5px solid black;
+    overflow: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #1e90ff;
+    /* Dodger Blue */
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p,
+a {
+    color: #ff4500;
+    /* Orange Red */
+}
+
+
+/* Department sections */
+
+.department-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.department {
+    background-color: #f8f8ff;
+    /* Ghost White */
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.department:hover {
+    transform: scale(1.05);
+}
+
+.department h2 {
+    font-size: 24px;
+    color: #4169e1;
+    /* Royal Blue */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.department ul {
+    list-style-type: square;
+    list-style-position: inside;
+    line-height: 2;
+    word-spacing: 4px;
+    color: #8b4513;
+    /* Saddle Brown */
+}
+
+.special {
+    color: #00008b;
+    /* Dark Blue */
+    font-weight: bold;
+    background-color: rgba(225, 255, 0, 0.623);
+}
+
+.department li em {
+    color: #daa520;
+    /* Goldenrod */
+    line-height: 1.5;
+}
+
+a:hover {
+    color: #ffd700;
+    /* Gold */
+    text-decoration: none;
+}
+
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+.background {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAqhQlE0g-OBH8MfQXCEHUjnjTn6e52DpySw&usqp=CAU);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Parallax background */
+
+.parallax {
+    background-image: url("https://png.pngtree.com/background/20210714/original/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-picture-image_1250295.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+.parallax-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+
+/* Heading styles */
+
+h1 {
+    font-size: 36px;
+}
+
+
+/* Link styles */
+
+a {
+    color: #FFD700;
+    /* Gold color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #FFA500;
+    /* Change color on hover to orange */
+}
+
+
+/* Department section styles */
+
+.department-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.section-title {
+    background-color: #22445a;
+    text-align: center;
+    color: rgb(220, 20, 83);
+    text-shadow: 1px 1px 1px black;
+    margin: 0;
+    padding: 10px;
+}
+
+
+/* Center-align the h2 heading */
+
+.department-section h2 {
+    text-align: center;
+    color: #f9f9fa;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #333;
+    text-decoration: underline;
+}
+
+.department-section:hover {
+    transform: scale(1.05);
+    background-color: #56a1b1;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Department list styles */
+
+.department-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+
+/* Department list item styles */
+
+.department-section li {
+    color: #221928;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.2s;
+}
+
+
+/* List item hover effect */
+
+.department-section li:hover {
+    text-decoration: underline;
+    transition: color 0.2s;
+}

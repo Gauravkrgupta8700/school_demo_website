@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Fee</title>
+    <link rel="stylesheet" href="paystyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pay Your Fee</h1>
+
+        <!-- User Details -->
+        <div class="input-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+        </div>
+        <div class="input-container">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="johndoe@example.com" required>
+        </div>
+
+        <!-- Payment Information -->
+        <div class="input-container">
+            <label for="card">Card Number:</label>
+            <input type="text" id="card" placeholder="1234 5678 9012 3456" required>
+        </div>
+        <div class="input-container">
+            <label for="expiry">Expiry Date:</label>
+            <input type="text" id="expiry" placeholder="MM/YY" required>
+        </div>
+        <div class="input-container">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="123" required>
+        </div>
+
+        <!-- Payment Amount -->
+        <div class="input-container">
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" placeholder="Enter Amount" required>
+        </div>
+        <input type="checkbox" id="agreeTerms" required>
+        <label for="agreeTerms">I agree to the <a href="/terms-and-conditions">Terms and Conditions</a></label>
+
+        <button id="payButton">Pay Now</button>
+
+        <button id="payButton">Pay Now</button>
+
+        <!-- Display a message after payment -->
+        <p id="paymentStatus"></p>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+
+</html>

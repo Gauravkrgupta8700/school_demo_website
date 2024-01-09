@@ -1,0 +1,137 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Add styles for the payment form */
+
+#paymentForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+/* Style the input fields */
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff;
+}
+
+
+/* Style the submit button */
+
+#payButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#payButton:hover {
+    background-color: #0056b3;
+}
+
+
+/* Add a transition to the checkbox */
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+input[type="checkbox"]:hover {
+    transform: scale(1.1);
+}
+
+
+/* Style links */
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+
+/* Style the confirmation message */
+
+#confirmationMessage {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+/* Add a fade-in effect for the confirmation message */
+
+.confirmation-message-active {
+    animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

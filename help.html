@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form / Contact Form</title>
+    <link rel="stylesheet" href="./ENQUIRY.CSS">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Contact Us</h1>
+            <h4>Please fill in all the particulars properly</h4>
+        </header>
+
+        <div class="user-info">
+            <img src="C:\Users\HP\OneDrive\Desktop\web d\user.jpg" alt="User" id="user" class="clip-circle">
+        </div>
+
+        <form action="#" method="post" class="smart-form">
+            <label>
+                <span>Name:</span>
+                <input type="text" name="name" required placeholder="Enter your name">
+            </label>
+
+            <label>
+                <span>Email:</span>
+                <input type="email" name="email" required placeholder="YourEmail@example.com">
+            </label>
+
+            <label>
+                <span>Contact Number:</span>
+                <input type="tel" name="contact" required placeholder="123-456-7890">
+            </label>
+
+            <label>
+                <span>Subject:</span>
+                <select id="query" name="query" class="query">
+                    <option value="general information">General Information</option>
+                    <option value="fees related">Fees Related</option>
+                    <option value="admission process">Admission Process</option>
+                    <option value="request a call back">Request a Call Back</option>
+                </select>
+            </label>
+
+            <label>
+                <span>Message:</span>
+                <textarea name="message" id="message" required placeholder="Enter your message"></textarea>
+            </label>
+
+            <input type="submit" value="Send Now">
+        </form>
+    </div>
+
+    <script src="enquiry.js"></script>
+</body>
+
+</html>
